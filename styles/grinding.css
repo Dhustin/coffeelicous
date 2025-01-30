@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style-position: inside; 
+    text-align: left; 
+}
+
+.grinder {
+    margin-top: 15%;
+}
+
+.container {
+    display: flex;
+    margin: 2%;
+}
+
+.contents {  
+    margin: 5%;
+    width: 85%;
+}
+
+.burrgrinding {
+    display: flex;
+    margin: 2%;
+}
+
+.burr-grinder-inside {
+    width: 85%;
+    margin-top: 10%;
+}
+
+.burrgrinding-contents {
+    width: 90%;
+    margin: 5%;
+}
+
+.burr-grinder-inside img {
+    width: 85%;
+}
+
+.chopping {
+    display: flex; 
+    margin: 2%;
+}
+
+.blender {
+    width: 75%;
+    margin: 2%;
+    margin-top: 5%;
+}
+
+.blender img {
+    width: 75%;
+}
+
+.chopping-contents {
+    width: 105%;
+    margin-left: 10px;
+}
+
+.chopping-contents, p, ol, li {
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+}
+
+h1, h2 {
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p, ol, li {
+    font-size: 25px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+img{border-radius: 10px;}
+
+#g ,#b,#blade{
+    color: black;
+    text-align: center;
+}
+/* Fixed Media Query */
+@media screen and (max-width: 1200px) {
+   .container, .burrgrinding, .chopping {
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .blender, .burr-grinder-inside, .chopping-contents {
+       width: 100%; /* Adjust widths for smaller screens */
+       margin-left: 0; /* Reset left margin */
+   }
+
+   p, ol, li {
+       font-size: 20px; /* Slightly smaller font size for better fit */
+   }
+
+   h1, h2 {
+       font-size: 24px; /* Adjust heading sizes if needed */
+   }
+   img{
+    width: 95%;
+    margin-left: 10%;
+    border-radius: 0;
+   }
+   .blender{order: 2;}
+   .grinder{margin-right: 12%;}
+}
